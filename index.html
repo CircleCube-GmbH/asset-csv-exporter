@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Gateway CSV Exporter</title>
+  <meta name="Scan Teltonika gateway QR codes and export them as CSV." content="">
+  <meta name="Linus Weber" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="two-thirds column" style="margin-top: 10%">
+        <h1>Gateway CSV Exporter</h4>
+        <p>Scan gateway QR codes, enter the corresponding machine serial numbers and download the CSV. 
+          You can upload the CSV file in our RMS Devices module in the CRM. Make sure that you select
+          Machine (Seriennummer) as mapping for the 'Machine' field.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="two-thirds column">
+        <video id="video" width="300" height="200" autoplay></video>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-third column">
+        <button class="button-primary" id="downloadCSVButton">Download CSV</button>
+      </div>
+      <div class="one-third column">
+        <p id="gatewayAddedNotification" hidden=true>Gateway added!</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="two-thirds column">
+        <table id="resultsTable" class="u-full-width">
+          <thead>
+            <tr>
+              <th>Machine Serial Number</th>
+              <th>Gateway Type</th>
+              <th>Gateway Serial</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/app.js" type="module"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
