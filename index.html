@@ -6,8 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Gateway CSV Exporter</title>
-  <meta name="Scan Teltonika gateway QR codes and export them as CSV." content="">
-  <meta name="Linus Weber" content="">
+  <meta name="description" content="Scan Teltonika gateway QR codes and export them as CSV.">
+  <meta name="author" content="Linus Weber">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,7 +34,7 @@
   <div class="container">
     <div class="row">
       <div class="two-thirds column" style="margin-top: 10%">
-        <h1>Gateway CSV Exporter</h4>
+        <h1>Gateway CSV Exporter</h1>
         <p>Scan gateway QR codes, enter the corresponding machine serial numbers and download the CSV. 
           You can upload the CSV file in our RMS Devices module in the CRM. Make sure that you select
           Machine (Seriennummer) as mapping for the 'Machine' field.</p>
@@ -42,7 +42,7 @@
     </div>
     <div class="row">
       <div class="two-thirds column">
-        <video id="video" width="300" height="200" autoplay></video>
+        <video id="video" width="300" height="200" autoplay playsinline muted></video>
       </div>
     </div>
     <div class="row">
@@ -50,7 +50,7 @@
         <button class="button-primary" id="downloadCSVButton">Download CSV</button>
       </div>
       <div class="one-third column">
-        <p id="gatewayAddedNotification" hidden=true>Gateway added!</p>
+        <p id="gatewayAddedNotification" hidden>Gateway added!</p>
       </div>
     </div>
     <div class="row">
